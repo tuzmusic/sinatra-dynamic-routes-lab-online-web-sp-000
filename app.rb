@@ -18,6 +18,11 @@ class App < Sinatra::Base
     str
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5'
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    str = ""
+    5.times do |i|
+      # str += 
+    end
+  end
 
 end
