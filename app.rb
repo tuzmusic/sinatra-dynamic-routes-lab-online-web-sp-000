@@ -32,10 +32,14 @@ class App < Sinatra::Base
     @num2 = params[:number2]#.to_i
     op = ""
     case :operation
-    when 'add' op = '+'
-    when 'subtract' op = '-'
-    when 'multiply' op = '*'
-    when 'divide' op = '/'
+    when 'add'
+      op = '+'
+    when 'subtract'
+      op = '-'
+    when 'multiply'
+      op = '*'
+    when 'divide'
+      op = '/'
     end
     code = @num1+op+@num2
     eval(code).to_s
