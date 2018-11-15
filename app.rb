@@ -21,7 +21,8 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     str = ""
     5.times do |i|
-      # str +=
+      sym = "word#{i+1}".to_sym
+      str += params[sym] + " "
     end
     str + "."
   end
