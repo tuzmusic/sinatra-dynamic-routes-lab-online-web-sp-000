@@ -24,7 +24,7 @@ class App < Sinatra::Base
       sym = "word#{i+1}".to_sym
       str += params[sym] + " "
     end
-    str + "."
+    str.trim + "."
   end
 
 end
