@@ -23,7 +23,7 @@ class App < Sinatra::Base
     5.times do |i|
       # str +=
     end
-    str
+    str + "."
   end
 
 end
